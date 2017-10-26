@@ -17,4 +17,11 @@ module.exports = app => {
 	  app.get('/delete','home.delete');
 	  app.get('/update','home.update');
 	  app.get('/findNew','home.findNew');
+
+
+	  app.post('/getDogs','dogs.getDogs');
+	  app.post('/addDogs','dogs.addDogs');
+
+
+	  
 };

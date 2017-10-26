@@ -29,10 +29,6 @@ module.exports = appInfo => {
     port:'3306',
     username:'root',
     password:'',
-    // define: {
-    //     timestamps: false,
-    //     freezeTableName: true,
-    //   },
   };
 
   config.security = {

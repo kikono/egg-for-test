@@ -56,9 +56,9 @@ module.exports = app =>{
 				email:'jzsamias@163.com',
 				sex:2
 			}
-			const data = yield this.ctx.model.User.create(params);
-			// const data = yield this.ctx.model.User.findAll();		//查找所有的数据
-			// const data = yield this.ctx.mdel.User.count();			//查找所有数据的总条数
+			// const data = yield this.ctx.model.User.create(params);
+			const data = yield this.ctx.model.User.findAll();		//查找所有的数据
+			// const data = yield this.ctx.model.User.count();			//查找所有数据的总条数
 			// const data = yield this.ctx.model.User.findById(this.params.id)			//按id去查询想要的信息
 			return data;
 		}
